@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alele-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alele-site
+  template:
+    metadata:
+      labels:
+        app: alele-site
+    spec:
+      containers:
+        - name: alele-container
+          image: xcwhy/alele-site:latest
+          ports:
+            - containerPort: 80

@@ -1,13 +1,111 @@
-
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Страница 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aleks Page</title>
+  <style>
+    :root {
+      --baby-blue: #89CFF0;
+      --light-gray: #888888;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: black url('Bones-background2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .content-box {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 40px 30px;
+    border-radius: 16px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    border: 2px solid rgb(181, 181, 181); 
+    transition: border 0.3s ease; 
+    }
+
+    .content-box:hover {
+    border: 2px dotted white; 
+    }
+
+    .title {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px rgba(0,0,0,0.6);
+    }
+
+    .description {
+      font-size: 1.3em;
+      line-height: 1.6;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+    .back-button {
+      background-color: var(--light-gray);
+      outline: #ffffff; 
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .back-button:hover {
+      background-color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1.1em;
+      }
+
+      .back-button {
+        font-size: 1em;
+        padding: 12px 24px;
+      }
+
+      .content-box {
+        padding: 30px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Това е Страница 1</h1>
-    <button onclick="location.href='index.html'">Върни се към началната страница</button>
-    <button onclick="location.href='page2.html'">Отиди на Страница 2</button>
+
+  <div class="content-box">
+    <div class="title">
+      Aleks :]]]]]]
+    </div>
+
+    <div class="description">
+      The picture you saw earlier was of my cat Sandy! She is a colorful breed and loves to sleep. She is usually scared of people, but once she gets comfortable with them - she starts to scratch and bite. :D
+    </div>
+  </div>
+
+  <button class="back-button" onclick="location.href='index.html'">
+    Back to Main Page ➡
+  </button>
+
 </body>
 </html>
