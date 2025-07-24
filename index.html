@@ -1,141 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Internship 2025</title>
-    <style>
-        :root {
-            --schwarz-blue: #0050AA;
-            --schwarz-gray: #F0F0F0;
-            --schwarz-text-dark: #333333;
-            --schwarz-accent-red: #E60A14;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Alele</title>
+  <style>
+    :root {
+      --baby-blue: #89CFF0;
+      --light-gray: #888888;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--schwarz-gray);
-            color: var(--schwarz-text-dark);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-direction: column;
-            line-height: 1.6;
-        }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .container {
-            background-color: #ffffff;
-            padding: 40px 60px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            max-width: 800px;
-            width: 90%;
-            animation: fadeIn 1s ease-out;
-        }
+    .title {
+      text-align: center;
+      font-size: 2.5em;
+      margin: 40px 0;
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+    .title span.ale {
+      color: var(--light-gray);
+    }
 
-        header {
-            margin-bottom: 30px;
-        }
+    .title span.le {
+      color: var(--baby-blue);
+    }
 
-        .logo {
-            max-width: 250px;
-            height: auto;
-            margin-bottom: 20px;
-        }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
 
-        h1 {
-            color: var(--schwarz-blue);
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
-        }
+    .clickable-div {
+    background-color: #222;
+    border: 2px solid #444;
+    border-radius: 12px;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: top center; /* 👈 Shows top of image */
+    flex: 1;
+    max-width: 50%;
+    min-height: 200px;
+    box-shadow: 0 0 10px transparent; /* start with no glow */
+    }
 
-        p {
-            font-size: 1.1em;
-            color: var(--schwarz-text-dark);
-            margin-bottom: 25px;
-        }
+    .clickable-div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(137, 207, 240, 0.6); /* 💡 baby blue glow */
+    }
 
-        .highlight {
-            color: var(--schwarz-accent-red);
-            font-weight: bold;
-        }
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
 
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #777;
-        }
-
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .nav-button {
-            background-color: var(--schwarz-blue);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            margin: 10px;
-            border-radius: 6px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-button:hover {
-            background-color: #003f88;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-        }
-    </style>
+      .clickable-div {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <center><img src="cat.png" alt="Cat" class="logo"></center>
-            <h1><center>Team Name: <span class="highlight">Schwarz IT</span>!</center></h1>
-        </header>
-        <main>
-            <p>A cat is a fluffy, mysterious friend who loves to purr, nap all day, and gaze at us with their independent eyes, full of playfulness..</p>
-            <p>Current server time: <span id="current-time"></span></p>
 
-            <!-- Бутони за навигация -->
-            <div class="button-container">
-                <button class="nav-button" onclick="location.href='page1.html'">Към Страница 1</button>
-                <button class="nav-button" onclick="location.href='page2.html'">Към Страница 2</button>
-            </div>
-        </main>
-        <center><footer>
-            &copy; 2025 Schwarz IT. All rights reserved.
-        </footer></center>
+  <div class="title">
+    Our team is: <span class="ale">Ale</span><span class="le">le</span>
+  </div>
+
+  <div class="button-container">
+    <div class="clickable-div" onclick="location.href='page1.html'" style="background-image: url('Mykucho.jpg.jpg');">
+
     </div>
+    <div class="clickable-div" onclick="location.href='page2.html'" style="background-image: url('SandyMeow.jpg');">
 
-    <script>
-        function updateTime() {
-            document.getElementById('current-time').innerText = new Date().toLocaleString();
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
+    </div>
+  </div>
+
 </body>
 </html>
