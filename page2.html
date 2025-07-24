@@ -13,7 +13,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: black url('background1.jpg') no-repeat center center fixed;
+      background: black url('MeowPattern2.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
@@ -26,6 +26,22 @@
       padding: 40px 20px;
     }
 
+    .content-box {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 40px 30px;
+    border-radius: 16px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    border: 2px solid rgb(181, 181, 181); 
+    transition: border 0.3s ease; 
+    }
+
+    .content-box:hover {
+    border: 2px dotted white; 
+    }
+
     .title {
       font-size: 2.8em;
       margin-bottom: 20px;
@@ -34,14 +50,13 @@
 
     .description {
       font-size: 1.3em;
-      max-width: 800px;
-      margin-bottom: 40px;
       line-height: 1.6;
       text-shadow: 0 0 5px rgba(0,0,0,0.5);
     }
 
     .back-button {
-      background-color: var(--baby-blue);
+      background-color: var(--light-gray);
+      outline: #ffffff; 
       border: none;
       padding: 15px 30px;
       font-size: 1.1em;
@@ -52,7 +67,7 @@
     }
 
     .back-button:hover {
-      background-color: #68bde8;
+      background-color: #ffffff;
       transform: scale(1.05);
     }
 
@@ -69,17 +84,23 @@
         font-size: 1em;
         padding: 12px 24px;
       }
+
+      .content-box {
+        padding: 30px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="title">
-    Elena Cherneva :]
-  </div>
+  <div class="content-box">
+    <div class="title">
+      Elena Cherneva :]
+    </div>
 
-  <div class="description">
-    The picture you saw earlier was of my cat Sandy! She is a colorful breed and loves to sleep. She is usually scared of people but once she gets comfortable with them she starts to scratch and bite. :D
+    <div class="description">
+      The picture you saw earlier was of my cat Sandy! She is a colorful breed and loves to sleep. She is usually scared of people, but once she gets comfortable with them - she starts to scratch and bite. :D
+    </div>
   </div>
 
   <button class="back-button" onclick="location.href='index.html'">
