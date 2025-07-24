@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Team Alele</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
   <style>
     :root {
       --baby-blue: #89CFF0;
@@ -13,7 +14,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: black url('Stars.jpg') repeat;
+      background: black url('Stars-background.gif') repeat;
       background-size: cover;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
@@ -26,8 +27,9 @@
 
     .title {
       text-align: center;
-      font-size: 2.5em;
+      font-size: 4.8em;
       margin: 40px 0;
+      font-family: 'UnifrakturCook', cursive;
     }
 
     .title span.ale {
@@ -48,26 +50,26 @@
     }
 
     .clickable-div {
-    background-color: #222;
-    border: 2px solid #444;
-    border-radius: 12px;
-    padding: 60px 20px;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.3s ease;
-    background-size: cover;
-    background-position: top center; /* 👈 Shows top of image */
-    flex: 1;
-    max-width: 50%;
-    min-height: 200px;
-    box-shadow: 0 0 10px transparent; /* start with no glow */
+      background-color: #222;
+      border: 2px solid #444;
+      border-radius: 12px;
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s ease;
+      background-size: cover;
+      background-position: top center;
+      flex: 1;
+      max-width: 50%;
+      min-height: 200px;
+      box-shadow: 0 0 10px transparent;
     }
 
     .clickable-div:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 25px rgba(137, 207, 240, 0.6); /* 💡 baby blue glow */
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(137, 207, 240, 0.6);
     }
 
     @media (max-width: 768px) {
@@ -90,10 +92,8 @@
 
   <div class="button-container">
     <div class="clickable-div" onclick="location.href='page1.html'" style="background-image: url('Mykucho.jpg');">
-
     </div>
     <div class="clickable-div" onclick="location.href='page2.html'" style="background-image: url('SandyMeow.jpg');">
-
     </div>
   </div>
 
