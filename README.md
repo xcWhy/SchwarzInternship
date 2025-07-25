@@ -1,5 +1,7 @@
 # Schwarz Internship Project
 
+https://github.com/xcWhy/SchwarzInternship/tree/main
+
 ## How we made the project?
 
 - By using the Stackit Cloud platform we created a personal Kubernetes cluster
